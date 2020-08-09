@@ -1,0 +1,177 @@
+#page-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f0f0f7;
+}
+
+.content-brand {
+  background: #8257e5;
+  background-image: url('../../assets/images/success-background.svg');
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.content-brand p {
+  color: var(--color-text-in-primary);
+}
+
+.content-brand .logo {
+  width: 22rem;
+}
+
+.content-form {
+  background: #f0f0f7;
+  width: 100%;
+  height: 50%;
+  padding: 2rem;
+}
+
+.content-form .title-form {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.content-form .title-form a {
+  text-decoration: none;
+  color: #8257e5;
+  font-size: 1.4rem;
+}
+
+.content-form .form-login {
+  margin-bottom: 1.5rem;
+  height: calc(100% - 4.5rem);
+}
+
+.content-form .form-login input[type='email'] {
+  width: 100%;
+  height: 5.8rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  outline: 0;
+  font: 1.6rem Archivo;
+  padding: 0 1.6rem;
+}
+
+.content-form .form-login input[type='password'] {
+  width: 100%;
+  height: 5.8rem;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  outline: 0;
+  font: 1.6rem Archivo;
+  padding: 0 1.6rem;
+}
+
+.content-form .form-login .form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.content-form .form-login .form-footer .area-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.content-form .form-login .form-footer .area-checkbox label {
+  padding-left: 8px;
+  font-size: 1.4rem;
+  color: var(--color-text-complement);
+}
+
+.form-footer div a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--color-text-complement);
+}
+
+.content-form .form-login button {
+  width: 100%;
+  height: 5.4rem;
+  border: 0;
+  border-radius: 0.8rem;
+  font: 700 2rem Archivo;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: var(--color-secundary);
+  color: var(--color-button-text);
+  transition: background-color 0.2s;
+}
+
+.content-form .form-login button:hover {
+  background-color: var(--color-secundary-dark);
+}
+
+.content-form footer {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  #page-login {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .content-brand {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/images/success-background.svg');
+    background-size: contain;
+    background-repeat: round;
+  }
+
+  .content-form .title-form {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .content-form .form-login {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .content-form footer {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .content-form footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--color-text-complement);
+  }
+
+  .content-form footer a {
+    color: #8257e5;
+  }
+
+  .title-form h4 {
+    font-size: 3rem;
+  }
+
+  .title-form a {
+    display: none;
+  }
+}
