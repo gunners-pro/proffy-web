@@ -1,0 +1,156 @@
+#page-register {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #8257e5;
+  background-image: url('../../assets/images/success-background.svg');
+  background-size: contain;
+}
+
+.content-brand-register {
+  display: none;
+  /* background: #8257e5;
+  background-image: url('../../assets/images/success-background.svg');
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%; */
+}
+
+#header-web {
+  display: none;
+}
+
+#header {
+  padding: 2rem 4rem;
+}
+
+#header a img:hover {
+  cursor: pointer;
+}
+
+.content-form-register {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content-form-register .title-form-register {
+  flex-direction: column;
+}
+
+.content-form-register .title-form-register h1 {
+  color: var(--color-title-in-primary);
+}
+
+.content-form-register .title-form-register h4 {
+  color: var(--color-text-in-primary);
+}
+
+.content-form-register .form-register {
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.content-form-register .form-register input {
+  width: 100%;
+  height: 6rem;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  outline: 0;
+  font: 1.6rem Archivo;
+  padding: 0 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.content-form-register .form-register input:first-child {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.content-form-register .form-register input:nth-last-child(2) {
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.content-form-register .form-register button {
+  width: 100%;
+  height: 5.4rem;
+  border: 0;
+  border-radius: 0.8rem;
+  font: 700 2rem Archivo;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: var(--color-secundary);
+  color: var(--color-button-text);
+  transition: background-color 0.2s;
+}
+
+.content-form-register .form-register button:hover {
+  background-color: var(--color-secundary-dark);
+}
+
+@media (min-width: 1100px) {
+  #page-register {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .content-brand-register {
+    background: #8257e5;
+    background-image: url('../../assets/images/success-background.svg');
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .content-brand-register p {
+    color: var(--color-title-in-primary);
+  }
+
+  .logo {
+  }
+
+  .content-form-register {
+    background: #f0f0f7;
+    width: 50%;
+    height: 100%;
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  #header {
+    display: none;
+  }
+
+  #header-web {
+    display: initial;
+  }
+
+  .content-form-register .title-form-register h1 {
+    color: var(--color-text-title);
+  }
+
+  .content-form-register .title-form-register h4 {
+    color: var(--color-text-complement);
+  }
+}

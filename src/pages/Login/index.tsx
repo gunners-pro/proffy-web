@@ -17,7 +17,7 @@ const Login: React.FC = () => {
       <div className="content-form">
         <div className="title-form">
           <h4>Fazer login</h4>
-          <Link to="/">Criar uma conta</Link>
+          <Link to="/register">Criar uma conta</Link>
         </div>
         <form className="form-login">
           <input type="email" placeholder="E-mail" />
@@ -37,7 +37,7 @@ const Login: React.FC = () => {
         <footer>
           <p>
             Não tem conta? <br />
-            <Link to="/">cadastre-se</Link>
+            <Link to="/register">cadastre-se</Link>
           </p>
           <p>
             É de graça <img src={purpleHeartIcon} alt="Purple heart icon" />
